@@ -1,41 +1,39 @@
-import { Header, Hero, PromoBanner } from "./components/Hero";
-import { RecentWork, RoofSystem, ServicesCarousel } from "./components/Sections";
-import { BeforeAfter, CompareMarquee, Process } from "./components/Process";
-import { Faq, Testimonials, WhyApex } from "./components/Testimonials";
-import { Closing, Footer, Schedule, Strip } from "./components/Schedule";
+import { Layout } from "./components/Layout";
+import { RouterProvider, usePath } from "./lib/router";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services, { NotFoundBody, ServiceDetail } from "./pages/Services";
+import Blog, { FaqPage, LegalPage } from "./pages/Blog";
+
+function Routes() {
+  const path = usePath();
+
+  if (path === "/") {
+    return (
+      <Layout overlayHeader>
+        <Home />
+      </Layout>
+    );
+  }
+
+  let body = <NotFoundBody />;
+
+  if (path === "/about") body = <About />;
+  else if (path === "/blog") body = <Blog />;
+  else if (path === "/faq") body = <FaqPage />;
+  else if (path === "/services") body = <Services />;
+  else if (path.startsWith("/services/"))
+    body = <ServiceDetail slug={path.slice("/services/".length)} />;
+  else if (path.startsWith("/legal/"))
+    body = <LegalPage slug={path.slice("/legal/".length)} />;
+
+  return <Layout>{body}</Layout>;
+}
 
 export default function App() {
   return (
-    <>
-      <a className="skip" href="#main-content">
-        Skip to content
-      </a>
-      <PromoBanner />
-      <Header />
-
-      <main id="main-content">
-        <Hero />
-        <RoofSystem />
-
-        <div className="frame">
-          <section className="panel panel--muted">
-            <ServicesCarousel />
-          </section>
-        </div>
-
-        <RecentWork />
-        <Process />
-        <BeforeAfter />
-        <CompareMarquee />
-        <Testimonials />
-        <WhyApex />
-        <Faq />
-        <Schedule />
-      </main>
-
-      <Closing />
-      <Strip />
-      <Footer />
-    </>
+    <RouterProvider>
+      <Routes />
+    </RouterProvider>
   );
 }

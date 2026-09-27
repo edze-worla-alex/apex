@@ -86,8 +86,8 @@ export function BeforeAfter() {
 
       <Reveal scale delay={80}>
         <Compare
-          before="/images/before-after/before.webp"
-          after="/images/before-after/after.webp"
+          before="/images/home/before-after/before.webp"
+          after="/images/home/before-after/after.webp"
           labels={["Before", "After"]}
         />
       </Reveal>

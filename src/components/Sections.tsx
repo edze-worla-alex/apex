@@ -24,7 +24,7 @@ export function RoofSystem() {
           <Reveal delay={200} scale>
             <img
               className="system__cutaway"
-              src="/images/roof-system/roof-cutaway.webp"
+              src="/images/home/roof-system/roof-cutaway.webp"
               alt="Cutaway of a roof system showing rafters, decking, underlayment, drip-edge flashing, and shingles"
             />
           </Reveal>
@@ -112,14 +112,14 @@ export function ServicesCarousel() {
 }
 
 const COL_A = [
-  ["/images/work/shingle-repair.webp", "Targeted shingle repair on a damaged roof slope"],
-  ["/images/work/new-roof-drone.webp", "Drone view of a completed architectural shingle roof"],
-  ["/images/services/roofing.webp", "Full roof replacement underway on a two-story home"],
+  ["/images/home/services/shingle-repair.webp", "Targeted shingle repair on a damaged roof slope"],
+  ["/images/home/work/new-roof-drone.webp", "Drone view of a completed architectural shingle roof"],
+  ["/images/home/services/replacement.webp", "Full roof replacement underway on a two-story home"],
 ];
 const COL_C = [
-  ["/images/process/roof-inspection.webp", "Inspector documenting roof condition during a free inspection"],
-  ["/images/work/roofer-detail.webp", "Roofer fastening shingles on a steep pitch"],
-  ["/images/work/home-lights.webp", "Family home lit up in the evening under a new roof"],
+  ["/images/home/process/roof-inspection.webp", "Inspector documenting roof condition during a free inspection"],
+  ["/images/home/work/roofer-detail.webp", "Roofer fastening shingles on a steep pitch"],
+  ["/images/home/work/home-lights.webp", "Family home lit up in the evening under a new roof"],
 ];
 
 export function RecentWork() {
@@ -165,7 +165,7 @@ export function RecentWork() {
           <div className="work__col">
             <Reveal as="figure" className="work__quote" scale delay={60}>
               <img
-                src="/images/work/crew-shingles.webp"
+                src="/images/home/work/crew-shingles.webp"
                 alt="Apex crew installing architectural shingles on a steep roof"
               />
               <div className="work__quote-body">
@@ -182,13 +182,13 @@ export function RecentWork() {
             </Reveal>
             <Reveal delay={150} scale>
               <img
-                src="/images/work/craftsman-night.webp"
+                src="/images/home/work/craftsman-night.webp"
                 alt="Craftsman home at night with a fresh tile roof"
               />
             </Reveal>
             <Reveal delay={220} scale>
               <img
-                src="/images/work/storm-tarping.webp"
+                src="/images/home/services/storm-tarping.webp"
                 alt="Crew securing a tarp over a hail-damaged roof"
               />
             </Reveal>

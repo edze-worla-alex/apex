@@ -3,28 +3,28 @@ export const PHONE_HREF = "tel:+15125550142";
 export const EMAIL = "hello@apexroofing.com";
 
 export const NAV = [
-  { label: "Services", href: "#services" },
-  { label: "About", href: "#work" },
-  { label: "Blog", href: "#work" },
-  { label: "FAQ", href: "#faq" },
-  { label: "Contact", href: "#schedule" },
+  { label: "Services", href: "/services" },
+  { label: "About", href: "/about" },
+  { label: "Blog", href: "/blog" },
+  { label: "FAQ", href: "/faq" },
+  { label: "Contact", href: "/#schedule" },
 ];
 
 export const SYSTEM_FEATURES = [
   {
-    img: "/images/roof-system/shingles.webp",
+    img: "/images/home/roof-system/shingles.webp",
     alt: "Stacked bundle of thick architectural asphalt roofing shingles",
     title: "Built to last",
     body: "Thick, impact-rated shingles built to take hail and high wind.",
   },
   {
-    img: "/images/roof-system/roof-flashing.webp",
+    img: "/images/home/roof-system/roof-flashing.webp",
     alt: "Metal flashing sealing the seam where a shingle roof meets a sided wall",
     title: "Locked down tight",
     body: "Metal flashing seals every roof-to-wall seam against wind and rain.",
   },
   {
-    img: "/images/roof-system/roof-ridge.webp",
+    img: "/images/home/roof-system/roof-ridge.webp",
     alt: "Long, perfectly straight roof ridge line with ridge-cap shingles",
     title: "Holds its line",
     body: "A crisp, dead-straight ridge line — true from end to end.",
@@ -35,31 +35,31 @@ export const SERVICES = [
   {
     title: "Roofing",
     blurb: "Replace, repair & storm help",
-    img: "/images/services/roofing.webp",
+    img: "/images/home/services/replacement.webp",
     alt: "Fresh roof decking on a home surrounded by trees",
   },
   {
     title: "Gutters",
     blurb: "Seamless gutters & guards",
-    img: "/images/services/gutters.webp",
+    img: "/images/services/gutters/gutter-trim-hero.webp",
     alt: "Seamless gutter and downspout on a blue-sided home",
   },
   {
     title: "Siding",
     blurb: "Vinyl, fiber cement & wood",
-    img: "/images/services/siding.webp",
+    img: "/images/services/siding/two-tone-siding.webp",
     alt: "Two-tone siding on a new craftsman home",
   },
   {
     title: "Windows",
     blurb: "Energy-efficient replacements",
-    img: "/images/services/windows.webp",
+    img: "/images/services/windows/dormer-window.webp",
     alt: "White double-hung window in a siding dormer",
   },
   {
     title: "Masonry",
     blurb: "Chimneys, tuckpointing & stone",
-    img: "/images/services/masonry.webp",
+    img: "/images/services/masonry/hero.webp",
     alt: "Brick chimney rising from a tile roof at sunset",
   },
 ];
@@ -68,31 +68,31 @@ export const PROCESS = [
   {
     title: "Free Inspection",
     body: "We get on your roof, check everything, and tell you what shape it's in — then leave the decision to you.",
-    img: "/images/process/roof-inspection.webp",
+    img: "/images/home/process/roof-inspection.webp",
     alt: "Inspector documenting roof condition during a free inspection",
   },
   {
     title: "Clear Written Estimate",
     body: "You get a written estimate that lists every cost and your material choices. The price we quote is the price you pay.",
-    img: "/images/process/written-estimate.webp",
+    img: "/images/home/process/written-estimate.webp",
     alt: "Written roofing estimate on a clipboard",
   },
   {
     title: "Pick Your Date",
     body: "We set a date that works for you and drop off your materials the day before, so the crew starts on time.",
-    img: "/images/process/materials-staged.webp",
+    img: "/images/home/process/materials-staged.webp",
     alt: "Roofing materials staged in a driveway the day before install",
   },
   {
     title: "Installation",
     body: "Our licensed crew tears off the old roof and installs the new one. Most homes are done in one or two days.",
-    img: "/images/work/roofer-detail.webp",
+    img: "/images/home/work/roofer-detail.webp",
     alt: "Roofer fastening shingles on a steep pitch",
   },
   {
     title: "Final Walkthrough",
     body: "We clean up, sweep your yard for nails with magnets, and walk the finished roof with you before we call it done.",
-    img: "/images/work/new-roof-drone.webp",
+    img: "/images/home/work/new-roof-drone.webp",
     alt: "Finished roof seen from above after the final walkthrough",
   },
 ];
@@ -101,10 +101,10 @@ export const TESTIMONIALS = [
   {
     name: "Ronak Bhatt",
     meta: "Full replacement · Austin, TX",
-    avatar: "/images/testimonials/ronak-bhatt.webp",
+    avatar: "/images/home/testimonials/ronak-bhatt.webp",
     quote:
       "Hail took out half the shingles on a Sunday night. Apex had a tarp on the roof before midnight and a repair plan in my inbox Monday morning. The new roof went on ten days later, and insurance covered everything but the deductible.",
-    img: "/images/work/storm-tarping.webp",
+    img: "/images/home/services/storm-tarping.webp",
     imgAlt: "Crew securing a tarp over a hail-damaged roof",
     stats: [
       ["4h", "To tarp"],
@@ -115,10 +115,10 @@ export const TESTIMONIALS = [
   {
     name: "Maya Fischer",
     meta: "Storm damage claim · Dripping Springs, TX",
-    avatar: "/images/testimonials/maya-fischer.webp",
+    avatar: "/images/home/testimonials/maya-fischer.webp",
     quote:
       "I'd been going back and forth with my adjuster for a month. Apex met him up on the roof, walked him through their photos, and the claim was approved that same afternoon. I still don't know what they said up there.",
-    img: "/images/work/crew-shingles.webp",
+    img: "/images/home/work/crew-shingles.webp",
     imgAlt: "Apex crew installing architectural shingles on a steep roof",
     stats: [
       ["1", "Afternoon"],
@@ -129,10 +129,10 @@ export const TESTIMONIALS = [
   {
     name: "Daniel Okafor",
     meta: "Roof repair · Houston, TX",
-    avatar: "/images/testimonials/daniel-okafor.webp",
+    avatar: "/images/home/testimonials/daniel-okafor.webp",
     quote:
       "Two other companies told me I needed a full replacement. Apex found one bad piece of flashing, fixed it in an afternoon, and charged me a few hundred dollars. They talked themselves out of a much bigger job.",
-    img: "/images/work/roofer-detail.webp",
+    img: "/images/home/work/roofer-detail.webp",
     imgAlt: "Roofer fastening shingles on a steep pitch",
     stats: [
       ["1", "Afternoon"],
@@ -143,10 +143,10 @@ export const TESTIMONIALS = [
   {
     name: "Priya Raman",
     meta: "New build · Dallas, TX",
-    avatar: "/images/testimonials/priya-raman.webp",
+    avatar: "/images/home/testimonials/priya-raman.webp",
     quote:
       "Our builder's roofer left us with three leaks in the first year. Apex redid the whole roof, sent photos of every layer as they went, and the final walkthrough took longer than the cleanup did.",
-    img: "/images/work/home-lights.webp",
+    img: "/images/home/work/home-lights.webp",
     imgAlt: "Family home lit up in the evening under a new roof",
     stats: [
       ["3", "Leaks fixed"],
@@ -157,10 +157,10 @@ export const TESTIMONIALS = [
   {
     name: "Chris Vaughn",
     meta: "Repeat customer · San Antonio, TX",
-    avatar: "/images/testimonials/chris-vaughn.webp",
+    avatar: "/images/home/testimonials/chris-vaughn.webp",
     quote:
       "Third roof I've had Apex do, counting two rentals. Same crew lead every time, same magnetic sweep of the yard before they pull out of the driveway. Nobody has ever had to come back and fix something they missed.",
-    img: "/images/work/craftsman-night.webp",
+    img: "/images/home/work/craftsman-night.webp",
     imgAlt: "Craftsman home at night with a fresh tile roof",
     stats: [
       ["3", "Roofs"],
@@ -254,35 +254,35 @@ export const FAQS = [
 ];
 
 export const BA_PAIRS = [
-  ["/images/before-after/before.webp", "/images/before-after/after.webp"],
-  ["/images/work/shingle-repair.webp", "/images/work/new-roof-drone.webp"],
-  ["/images/work/storm-tarping.webp", "/images/work/crew-shingles.webp"],
-  ["/images/services/roofing.webp", "/images/work/home-lights.webp"],
-  ["/images/roof-system/roof-ridge.webp", "/images/work/craftsman-night.webp"],
-  ["/images/services/gutters.webp", "/images/services/siding.webp"],
-  ["/images/services/masonry.webp", "/images/services/windows.webp"],
-  ["/images/work/roofer-detail.webp", "/images/work/about-hero.webp"],
+  ["/images/home/before-after/before.webp", "/images/home/before-after/after.webp"],
+  ["/images/home/services/shingle-repair.webp", "/images/home/work/new-roof-drone.webp"],
+  ["/images/home/services/storm-tarping.webp", "/images/home/work/crew-shingles.webp"],
+  ["/images/home/services/replacement.webp", "/images/home/work/home-lights.webp"],
+  ["/images/home/roof-system/roof-ridge.webp", "/images/home/work/craftsman-night.webp"],
+  ["/images/services/gutters/gutter-trim-hero.webp", "/images/services/siding/two-tone-siding.webp"],
+  ["/images/services/masonry/hero.webp", "/images/services/windows/dormer-window.webp"],
+  ["/images/home/work/roofer-detail.webp", "/images/about/hero.webp"],
 ];
 
 export const FAN_PHOTOS = [
   {
-    src: "/images/work/about-hero.webp",
+    src: "/images/about/hero.webp",
     alt: "Standing seam metal roof catching the last light",
   },
   {
-    src: "/images/work/crew-shingles.webp",
+    src: "/images/home/work/crew-shingles.webp",
     alt: "Apex crew installing architectural shingles on a steep roof",
   },
   {
-    src: "/images/work/roofer-detail.webp",
+    src: "/images/home/work/roofer-detail.webp",
     alt: "Roofer fastening shingles on a steep pitch",
   },
   {
-    src: "/images/work/craftsman-night.webp",
+    src: "/images/home/work/craftsman-night.webp",
     alt: "Craftsman home at night with a fresh tile roof",
   },
   {
-    src: "/images/work/home-lights.webp",
+    src: "/images/home/work/home-lights.webp",
     alt: "Family home lit up in the evening under a new roof",
   },
 ];
