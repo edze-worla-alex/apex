@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import { EMAIL, FAN_PHOTOS, PHONE, PHONE_HREF, TOWNS, NAV } from "../lib/content";
 import { Display, Reveal } from "./Display";
+import { Link } from "../lib/router";
 import {
   ApexMark,
   ChevronDown,
@@ -265,10 +266,10 @@ export function Closing() {
             A licensed local crew, honest answers, and a 25-year warranty in
             writing — anywhere in Texas Hill Country.
           </p>
-          <a className="btn btn--dark btn--lg" href="#schedule">
+          <Link className="btn btn--dark btn--lg" to="/#schedule">
             <ApexMark size={16} style={{ color: "var(--accent-bright)" }} />
             Get a free estimate
-          </a>
+          </Link>
         </Reveal>
       </div>
     </section>
@@ -284,7 +285,7 @@ export function Strip() {
   );
 
   return (
-    <a className="strip" href="#schedule" aria-label="Get a free estimate">
+    <Link className="strip" to="/#schedule" aria-label="Get a free estimate">
       <div className="strip__track">
         {Array.from({ length: 8 }).map((_, i) => (
           <span key={i} style={{ display: "inline-flex", gap: 40 }}>
@@ -292,7 +293,7 @@ export function Strip() {
           </span>
         ))}
       </div>
-    </a>
+    </Link>
   );
 }
 
@@ -301,10 +302,10 @@ export function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div>
-          <a className="brand" href="#top">
+          <Link className="brand" to="/">
             <ApexMark style={{ color: "var(--accent-bright)" }} />
             Apex
-          </a>
+          </Link>
           <p className="footer__tag">
             Done in days.
             <em>Built for decades.</em>
@@ -324,10 +325,10 @@ export function Footer() {
           <div className="footer__legal">
             <ul style={{ display: "flex", gap: 16 }}>
               <li>
-                <a href="#top">Privacy policy</a>
+                <Link to="/legal/privacy-policy">Privacy policy</Link>
               </li>
               <li>
-                <a href="#top">Terms of service</a>
+                <Link to="/legal/terms-of-service">Terms of service</Link>
               </li>
             </ul>
             <p>© Apex · Licensed &amp; insured · Serving Texas Hill Country</p>
@@ -339,7 +340,7 @@ export function Footer() {
           <ul>
             {NAV.map((n) => (
               <li key={n.label}>
-                <a href={n.href}>{n.label}</a>
+                <Link to={n.href}>{n.label}</Link>
               </li>
             ))}
           </ul>
@@ -350,7 +351,7 @@ export function Footer() {
           <ul>
             {["Roofing", "Gutters", "Siding", "Windows", "Masonry"].map((s) => (
               <li key={s}>
-                <a href="#services">{s}</a>
+                <Link to={`/services/${s.toLowerCase()}`}>{s}</Link>
               </li>
             ))}
           </ul>

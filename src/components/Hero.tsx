@@ -1,71 +1,5 @@
-import { useState } from "react";
-import { NAV, PHONE, PHONE_HREF } from "../lib/content";
-import { useScrolled } from "../lib/hooks";
-import {
-  ApexMark,
-  ChevronDown,
-  Close,
-  Phone,
-  Star,
-  Wrench,
-  CalendarIcon,
-} from "./icons";
+import { CalendarIcon, ChevronDown, Star, Wrench } from "./icons";
 import { Display, Reveal } from "./Display";
-
-export function PromoBanner() {
-  const [open, setOpen] = useState(true);
-  if (!open) return null;
-
-  return (
-    <aside className="promo">
-      <span>Purchase this theme on shadcnblocks.com</span>
-      <a className="btn btn--dark" href="https://shadcnblocks.com">
-        Get Template
-      </a>
-      <button
-        className="promo__close"
-        onClick={() => setOpen(false)}
-        aria-label="Close banner"
-      >
-        <Close />
-      </button>
-    </aside>
-  );
-}
-
-export function Header() {
-  const stuck = useScrolled(60);
-
-  return (
-    <header className={`header ${stuck ? "is-stuck" : ""}`}>
-      <div className="header__inner">
-        <a className="brand" href="#top">
-          <ApexMark style={{ color: "var(--accent-bright)" }} />
-          Apex
-        </a>
-
-        <nav className="nav" aria-label="Main">
-          {NAV.map((item) => (
-            <a key={item.label} href={item.href}>
-              {item.label}
-              {item.label === "Services" && <ChevronDown />}
-            </a>
-          ))}
-        </nav>
-
-        <div className="header__actions">
-          <a className="header__phone" href={PHONE_HREF}>
-            <Phone />
-            {PHONE}
-          </a>
-          <a className="btn btn--light" href="#schedule">
-            Free Estimate
-          </a>
-        </div>
-      </div>
-    </header>
-  );
-}
 
 const SERVICE_OPTIONS = [
   "Roofing",
@@ -88,7 +22,7 @@ export function Hero() {
         <div className="hero__media">
           <video
             src="/videos/hero.mp4"
-            poster="/images/work/crew-shingles.webp"
+            poster="/images/home/work/crew-shingles.webp"
             autoPlay
             muted
             loop
